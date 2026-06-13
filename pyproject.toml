@@ -1,0 +1,20 @@
+[project]
+name = "shopping-agent"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=0.109.1",
+    "pydantic-ai>=1.107.0",
+    "python-dotenv>=1.2.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-asyncio>=1.4.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["."]
