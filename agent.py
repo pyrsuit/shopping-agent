@@ -1,4 +1,6 @@
 from pydantic_ai import Agent, RunContext
+from pydantic_ai.models.ollama import OllamaModel
+from pydantic_ai.providers.ollama import OllamaProvider
 from models import ShoppingList
 
 RECIPES: dict[str, list[str]] = {
@@ -41,8 +43,13 @@ CATEGORIES: dict[str, str] = {
     "garlic": "produce",
 }
 
+model = OllamaModel(
+    "llama3.2:3b",
+    provider=OllamaProvider(base_url="http://localhost:11434/v1")
+)
+
 shopping_agent = Agent(
-    "anthropic:claude-sonnet-4-6",
+    model,
     deps_type=dict,
     output_type=ShoppingList,
     system_prompt=(

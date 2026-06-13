@@ -2405,7 +2405,6 @@ name = "shopping-agent"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "anthropic" },
     { name = "pydantic-ai" },
     { name = "python-dotenv" },
 ]
@@ -2418,7 +2417,6 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "anthropic", specifier = ">=0.109.1" },
     { name = "pydantic-ai", specifier = ">=1.107.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
 ]
