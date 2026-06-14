@@ -52,6 +52,7 @@ shopping_agent = Agent(
     model,
     deps_type=dict,
     output_type=ShoppingList,
+    retries=3,
     system_prompt=(
         "You are a helpful shopping assistant. Given meal descriptions, "
         "use the provided tools to check the inventory, get recipe ingredients, "

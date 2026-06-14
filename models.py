@@ -3,8 +3,8 @@ from pydantic import BaseModel
 
 class ShoppingItem(BaseModel):
     name: str
-    quantity: str
-    category: str
+    quantity: str = "as needed"
+    category: str = "other"
 
 
 class ShoppingList(BaseModel):
