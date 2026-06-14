@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-INVENTORY_FILE = Path(__file__).parent / "inventory.json"
+INVENTORY_FILE = Path(__file__).parent.parent / "data" / "inventory.json"
 
 
 def load_inventory() -> dict[str, str]:

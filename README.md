@@ -26,14 +26,14 @@ uv sync
 
 ```bash
 # Plan meals → get a shopping list
-uv run python main.py "pasta carbonara and greek salad this week"
+uv run python src/main.py "pasta carbonara and greek salad this week"
 
 # See what's in your inventory
-uv run python main.py --inventory
+uv run python src/main.py --inventory
 
 # Add an item to inventory
-uv run python main.py --add "milk 1L"
+uv run python src/main.py --add "milk 1L"
 
 # Remove an item from inventory
-uv run python main.py --remove "milk"
+uv run python src/main.py --remove "milk"
 ```
