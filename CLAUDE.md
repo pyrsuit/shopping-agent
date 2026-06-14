@@ -1,4 +1,4 @@
-# Smart Shopping List Agent
+# Smart Shopping Agent
 
 A home project using PydanticAI to plan weekly meals and generate structured shopping lists. You describe meals in plain English; the agent checks your inventory and outputs a typed, categorized shopping list.
 

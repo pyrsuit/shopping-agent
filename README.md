@@ -1,4 +1,4 @@
-# Shopping List Agent
+# Shopping Agent
 
 Describe your meals in plain English and get a categorized shopping list — skipping anything you already have at home.
 
